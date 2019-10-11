@@ -1,0 +1,6 @@
+framework module Pods_RPCRabbitMQClientSwift {
+  umbrella header "Pods-RPCRabbitMQClientSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

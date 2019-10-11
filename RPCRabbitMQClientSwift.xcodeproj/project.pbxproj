@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64E4B221DEEF0A19F1A021ED /* Pods_RPCRabbitMQClientSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4FB17AD1056F2E0D99F1EE /* Pods_RPCRabbitMQClientSwiftUITests.framework */; };
+		92A1E8B32350EE4200A0B8DA /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1E8B22350EE4100A0B8DA /* Connection.swift */; };
+		92A1E8B52350EFF000A0B8DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1E8B42350EFF000A0B8DA /* ViewController.swift */; };
+		92EF22C62350E15B006BA0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF22C52350E15B006BA0C1 /* AppDelegate.swift */; };
+		92EF22CC2350E160006BA0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EF22CB2350E160006BA0C1 /* Assets.xcassets */; };
+		92EF22CF2350E160006BA0C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EF22CE2350E160006BA0C1 /* Preview Assets.xcassets */; };
+		92EF22D22350E160006BA0C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EF22D02350E160006BA0C1 /* LaunchScreen.storyboard */; };
+		92EF22DD2350E160006BA0C1 /* RPCRabbitMQClientSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF22DC2350E160006BA0C1 /* RPCRabbitMQClientSwiftTests.swift */; };
+		92EF22E82350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF22E72350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests.swift */; };
+		92EF22F62350EB51006BA0C1 /* RPCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF22F52350EB51006BA0C1 /* RPCClient.swift */; };
+		BC4A58B7A02DC7A605C49C21 /* Pods_RPCRabbitMQClientSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A97446E0E53B851A69C170 /* Pods_RPCRabbitMQClientSwiftTests.framework */; };
+		BFE8DF42B4A0276609118F04 /* Pods_RPCRabbitMQClientSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D274F0048CF08C66FCE46C /* Pods_RPCRabbitMQClientSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92EF22D92350E160006BA0C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92EF22BA2350E15B006BA0C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92EF22C12350E15B006BA0C1;
+			remoteInfo = RPCRabbitMQClientSwift;
+		};
+		92EF22E42350E160006BA0C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92EF22BA2350E15B006BA0C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92EF22C12350E15B006BA0C1;
+			remoteInfo = RPCRabbitMQClientSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B9B89602C011C6BDE08F0D7 /* Pods-RPCRabbitMQClientSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPCRabbitMQClientSwift.debug.xcconfig"; path = "Target Support Files/Pods-RPCRabbitMQClientSwift/Pods-RPCRabbitMQClientSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		3B3E45FEBBFB7E4007C8D825 /* Pods-RPCRabbitMQClientSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPCRabbitMQClientSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-RPCRabbitMQClientSwiftTests/Pods-RPCRabbitMQClientSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A4FB17AD1056F2E0D99F1EE /* Pods_RPCRabbitMQClientSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPCRabbitMQClientSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73EBDA5C3B9DA1C7AE9968C7 /* Pods-RPCRabbitMQClientSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPCRabbitMQClientSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-RPCRabbitMQClientSwiftUITests/Pods-RPCRabbitMQClientSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AE6D8AA8D18C07A84A406D2 /* Pods-RPCRabbitMQClientSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPCRabbitMQClientSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-RPCRabbitMQClientSwiftTests/Pods-RPCRabbitMQClientSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		895F0E09BB7DA4C62A74F1BD /* Pods-RPCRabbitMQClientSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPCRabbitMQClientSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-RPCRabbitMQClientSwiftUITests/Pods-RPCRabbitMQClientSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92A1E8B22350EE4100A0B8DA /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		92A1E8B42350EFF000A0B8DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92EF22C22350E15B006BA0C1 /* RPCRabbitMQClientSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPCRabbitMQClientSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92EF22C52350E15B006BA0C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92EF22CB2350E160006BA0C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92EF22CE2350E160006BA0C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92EF22D12350E160006BA0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92EF22D32350E160006BA0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92EF22D82350E160006BA0C1 /* RPCRabbitMQClientSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPCRabbitMQClientSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92EF22DC2350E160006BA0C1 /* RPCRabbitMQClientSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCRabbitMQClientSwiftTests.swift; sourceTree = "<group>"; };
+		92EF22DE2350E160006BA0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92EF22E32350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPCRabbitMQClientSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92EF22E72350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCRabbitMQClientSwiftUITests.swift; sourceTree = "<group>"; };
+		92EF22E92350E160006BA0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92EF22F52350EB51006BA0C1 /* RPCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCClient.swift; sourceTree = "<group>"; };
+		A2D274F0048CF08C66FCE46C /* Pods_RPCRabbitMQClientSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPCRabbitMQClientSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C834C14FE7215F2F52EBAE9C /* Pods-RPCRabbitMQClientSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPCRabbitMQClientSwift.release.xcconfig"; path = "Target Support Files/Pods-RPCRabbitMQClientSwift/Pods-RPCRabbitMQClientSwift.release.xcconfig"; sourceTree = "<group>"; };
+		C9A97446E0E53B851A69C170 /* Pods_RPCRabbitMQClientSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPCRabbitMQClientSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92EF22BF2350E15B006BA0C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE8DF42B4A0276609118F04 /* Pods_RPCRabbitMQClientSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92EF22D52350E160006BA0C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4A58B7A02DC7A605C49C21 /* Pods_RPCRabbitMQClientSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92EF22E02350E160006BA0C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E4B221DEEF0A19F1A021ED /* Pods_RPCRabbitMQClientSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60F9E9D5A1DADDDDFC20F8E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B9B89602C011C6BDE08F0D7 /* Pods-RPCRabbitMQClientSwift.debug.xcconfig */,
+				C834C14FE7215F2F52EBAE9C /* Pods-RPCRabbitMQClientSwift.release.xcconfig */,
+				3B3E45FEBBFB7E4007C8D825 /* Pods-RPCRabbitMQClientSwiftTests.debug.xcconfig */,
+				7AE6D8AA8D18C07A84A406D2 /* Pods-RPCRabbitMQClientSwiftTests.release.xcconfig */,
+				73EBDA5C3B9DA1C7AE9968C7 /* Pods-RPCRabbitMQClientSwiftUITests.debug.xcconfig */,
+				895F0E09BB7DA4C62A74F1BD /* Pods-RPCRabbitMQClientSwiftUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7AA9F54A7E3B70F4D4B8E36D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2D274F0048CF08C66FCE46C /* Pods_RPCRabbitMQClientSwift.framework */,
+				C9A97446E0E53B851A69C170 /* Pods_RPCRabbitMQClientSwiftTests.framework */,
+				4A4FB17AD1056F2E0D99F1EE /* Pods_RPCRabbitMQClientSwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92EF22B92350E15B006BA0C1 = {
+			isa = PBXGroup;
+			children = (
+				92EF22C42350E15B006BA0C1 /* RPCRabbitMQClientSwift */,
+				92EF22DB2350E160006BA0C1 /* RPCRabbitMQClientSwiftTests */,
+				92EF22E62350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests */,
+				92EF22C32350E15B006BA0C1 /* Products */,
+				60F9E9D5A1DADDDDFC20F8E3 /* Pods */,
+				7AA9F54A7E3B70F4D4B8E36D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92EF22C32350E15B006BA0C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92EF22C22350E15B006BA0C1 /* RPCRabbitMQClientSwift.app */,
+				92EF22D82350E160006BA0C1 /* RPCRabbitMQClientSwiftTests.xctest */,
+				92EF22E32350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92EF22C42350E15B006BA0C1 /* RPCRabbitMQClientSwift */ = {
+			isa = PBXGroup;
+			children = (
+				92A1E8B42350EFF000A0B8DA /* ViewController.swift */,
+				92EF22C52350E15B006BA0C1 /* AppDelegate.swift */,
+				92A1E8B22350EE4100A0B8DA /* Connection.swift */,
+				92EF22F52350EB51006BA0C1 /* RPCClient.swift */,
+				92EF22CB2350E160006BA0C1 /* Assets.xcassets */,
+				92EF22D02350E160006BA0C1 /* LaunchScreen.storyboard */,
+				92EF22D32350E160006BA0C1 /* Info.plist */,
+				92EF22CD2350E160006BA0C1 /* Preview Content */,
+			);
+			path = RPCRabbitMQClientSwift;
+			sourceTree = "<group>";
+		};
+		92EF22CD2350E160006BA0C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92EF22CE2350E160006BA0C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92EF22DB2350E160006BA0C1 /* RPCRabbitMQClientSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				92EF22DC2350E160006BA0C1 /* RPCRabbitMQClientSwiftTests.swift */,
+				92EF22DE2350E160006BA0C1 /* Info.plist */,
+			);
+			path = RPCRabbitMQClientSwiftTests;
+			sourceTree = "<group>";
+		};
+		92EF22E62350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92EF22E72350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests.swift */,
+				92EF22E92350E160006BA0C1 /* Info.plist */,
+			);
+			path = RPCRabbitMQClientSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92EF22C12350E15B006BA0C1 /* RPCRabbitMQClientSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92EF22EC2350E160006BA0C1 /* Build configuration list for PBXNativeTarget "RPCRabbitMQClientSwift" */;
+			buildPhases = (
+				F8E1A8547AD37571AB9594BF /* [CP] Check Pods Manifest.lock */,
+				92EF22BE2350E15B006BA0C1 /* Sources */,
+				92EF22BF2350E15B006BA0C1 /* Frameworks */,
+				92EF22C02350E15B006BA0C1 /* Resources */,
+				5C61C13AE60C7727795CD528 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPCRabbitMQClientSwift;
+			productName = RPCRabbitMQClientSwift;
+			productReference = 92EF22C22350E15B006BA0C1 /* RPCRabbitMQClientSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92EF22D72350E160006BA0C1 /* RPCRabbitMQClientSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92EF22EF2350E160006BA0C1 /* Build configuration list for PBXNativeTarget "RPCRabbitMQClientSwiftTests" */;
+			buildPhases = (
+				DF6AB61D7EEE15E7CAE9C53D /* [CP] Check Pods Manifest.lock */,
+				92EF22D42350E160006BA0C1 /* Sources */,
+				92EF22D52350E160006BA0C1 /* Frameworks */,
+				92EF22D62350E160006BA0C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92EF22DA2350E160006BA0C1 /* PBXTargetDependency */,
+			);
+			name = RPCRabbitMQClientSwiftTests;
+			productName = RPCRabbitMQClientSwiftTests;
+			productReference = 92EF22D82350E160006BA0C1 /* RPCRabbitMQClientSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92EF22E22350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92EF22F22350E160006BA0C1 /* Build configuration list for PBXNativeTarget "RPCRabbitMQClientSwiftUITests" */;
+			buildPhases = (
+				CBA613EFFB8267DEE6BC792D /* [CP] Check Pods Manifest.lock */,
+				92EF22DF2350E160006BA0C1 /* Sources */,
+				92EF22E02350E160006BA0C1 /* Frameworks */,
+				92EF22E12350E160006BA0C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92EF22E52350E160006BA0C1 /* PBXTargetDependency */,
+			);
+			name = RPCRabbitMQClientSwiftUITests;
+			productName = RPCRabbitMQClientSwiftUITests;
+			productReference = 92EF22E32350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92EF22BA2350E15B006BA0C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = edi;
+				TargetAttributes = {
+					92EF22C12350E15B006BA0C1 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					92EF22D72350E160006BA0C1 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 92EF22C12350E15B006BA0C1;
+					};
+					92EF22E22350E160006BA0C1 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 92EF22C12350E15B006BA0C1;
+					};
+				};
+			};
+			buildConfigurationList = 92EF22BD2350E15B006BA0C1 /* Build configuration list for PBXProject "RPCRabbitMQClientSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92EF22B92350E15B006BA0C1;
+			productRefGroup = 92EF22C32350E15B006BA0C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92EF22C12350E15B006BA0C1 /* RPCRabbitMQClientSwift */,
+				92EF22D72350E160006BA0C1 /* RPCRabbitMQClientSwiftTests */,
+				92EF22E22350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92EF22C02350E15B006BA0C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EF22D22350E160006BA0C1 /* LaunchScreen.storyboard in Resources */,
+				92EF22CF2350E160006BA0C1 /* Preview Assets.xcassets in Resources */,
+				92EF22CC2350E160006BA0C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92EF22D62350E160006BA0C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92EF22E12350E160006BA0C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C61C13AE60C7727795CD528 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RPCRabbitMQClientSwift/Pods-RPCRabbitMQClientSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RPCRabbitMQClientSwift/Pods-RPCRabbitMQClientSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RPCRabbitMQClientSwift/Pods-RPCRabbitMQClientSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA613EFFB8267DEE6BC792D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPCRabbitMQClientSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6AB61D7EEE15E7CAE9C53D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPCRabbitMQClientSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E1A8547AD37571AB9594BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPCRabbitMQClientSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92EF22BE2350E15B006BA0C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A1E8B52350EFF000A0B8DA /* ViewController.swift in Sources */,
+				92EF22C62350E15B006BA0C1 /* AppDelegate.swift in Sources */,
+				92A1E8B32350EE4200A0B8DA /* Connection.swift in Sources */,
+				92EF22F62350EB51006BA0C1 /* RPCClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92EF22D42350E160006BA0C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EF22DD2350E160006BA0C1 /* RPCRabbitMQClientSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92EF22DF2350E160006BA0C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EF22E82350E160006BA0C1 /* RPCRabbitMQClientSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92EF22DA2350E160006BA0C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92EF22C12350E15B006BA0C1 /* RPCRabbitMQClientSwift */;
+			targetProxy = 92EF22D92350E160006BA0C1 /* PBXContainerItemProxy */;
+		};
+		92EF22E52350E160006BA0C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92EF22C12350E15B006BA0C1 /* RPCRabbitMQClientSwift */;
+			targetProxy = 92EF22E42350E160006BA0C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92EF22D02350E160006BA0C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92EF22D12350E160006BA0C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92EF22EA2350E160006BA0C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92EF22EB2350E160006BA0C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92EF22ED2350E160006BA0C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9B89602C011C6BDE08F0D7 /* Pods-RPCRabbitMQClientSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RPCRabbitMQClientSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = 322RC92FC2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RPCRabbitMQClientSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edimariyanto491.RPCRabbitMQClientSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92EF22EE2350E160006BA0C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C834C14FE7215F2F52EBAE9C /* Pods-RPCRabbitMQClientSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RPCRabbitMQClientSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = 322RC92FC2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RPCRabbitMQClientSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edimariyanto491.RPCRabbitMQClientSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92EF22F02350E160006BA0C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B3E45FEBBFB7E4007C8D825 /* Pods-RPCRabbitMQClientSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322RC92FC2;
+				INFOPLIST_FILE = RPCRabbitMQClientSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edimariyanto491.RPCRabbitMQClientSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPCRabbitMQClientSwift.app/RPCRabbitMQClientSwift";
+			};
+			name = Debug;
+		};
+		92EF22F12350E160006BA0C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE6D8AA8D18C07A84A406D2 /* Pods-RPCRabbitMQClientSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322RC92FC2;
+				INFOPLIST_FILE = RPCRabbitMQClientSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edimariyanto491.RPCRabbitMQClientSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPCRabbitMQClientSwift.app/RPCRabbitMQClientSwift";
+			};
+			name = Release;
+		};
+		92EF22F32350E160006BA0C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73EBDA5C3B9DA1C7AE9968C7 /* Pods-RPCRabbitMQClientSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322RC92FC2;
+				INFOPLIST_FILE = RPCRabbitMQClientSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edimariyanto491.RPCRabbitMQClientSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPCRabbitMQClientSwift;
+			};
+			name = Debug;
+		};
+		92EF22F42350E160006BA0C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 895F0E09BB7DA4C62A74F1BD /* Pods-RPCRabbitMQClientSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322RC92FC2;
+				INFOPLIST_FILE = RPCRabbitMQClientSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edimariyanto491.RPCRabbitMQClientSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPCRabbitMQClientSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92EF22BD2350E15B006BA0C1 /* Build configuration list for PBXProject "RPCRabbitMQClientSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92EF22EA2350E160006BA0C1 /* Debug */,
+				92EF22EB2350E160006BA0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92EF22EC2350E160006BA0C1 /* Build configuration list for PBXNativeTarget "RPCRabbitMQClientSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92EF22ED2350E160006BA0C1 /* Debug */,
+				92EF22EE2350E160006BA0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92EF22EF2350E160006BA0C1 /* Build configuration list for PBXNativeTarget "RPCRabbitMQClientSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92EF22F02350E160006BA0C1 /* Debug */,
+				92EF22F12350E160006BA0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92EF22F22350E160006BA0C1 /* Build configuration list for PBXNativeTarget "RPCRabbitMQClientSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92EF22F32350E160006BA0C1 /* Debug */,
+				92EF22F42350E160006BA0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92EF22BA2350E15B006BA0C1 /* Project object */;
+}
